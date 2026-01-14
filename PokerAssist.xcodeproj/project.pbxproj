@@ -6,13 +6,47 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C3AF00132F17461F00827C1E /* MWDATCamera in Frameworks */ = {isa = PBXBuildFile; productRef = C3AF00122F17461F00827C1E /* MWDATCamera */; };
+		C3AF00152F17461F00827C1E /* MWDATCore in Frameworks */ = {isa = PBXBuildFile; productRef = C3AF00142F17461F00827C1E /* MWDATCore */; };
+		C3AF00172F17461F00827C1E /* MWDATMockDevice in Frameworks */ = {isa = PBXBuildFile; productRef = C3AF00162F17461F00827C1E /* MWDATMockDevice */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		C3AF00182F17477F00827C1E /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = text.plist;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyPlist\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
 		C3A70FD12EF9E08800965C71 /* PokerAssist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerAssist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C3AF00192F17487000827C1E /* Exceptions for "PokerAssist" folder in "PokerAssist" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				Info.plist,
+			);
+			target = C3A70FD02EF9E08800965C71 /* PokerAssist */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C3A70FD32EF9E08800965C71 /* PokerAssist */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C3AF00192F17487000827C1E /* Exceptions for "PokerAssist" folder in "PokerAssist" target */,
+			);
 			path = PokerAssist;
 			sourceTree = "<group>";
 		};
@@ -23,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3AF00132F17461F00827C1E /* MWDATCamera in Frameworks */,
+				C3AF00172F17461F00827C1E /* MWDATMockDevice in Frameworks */,
+				C3AF00152F17461F00827C1E /* MWDATCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +94,7 @@
 				C3A70FCF2EF9E08800965C71 /* Resources */,
 			);
 			buildRules = (
+				C3AF00182F17477F00827C1E /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -65,6 +103,9 @@
 			);
 			name = PokerAssist;
 			packageProductDependencies = (
+				C3AF00122F17461F00827C1E /* MWDATCamera */,
+				C3AF00142F17461F00827C1E /* MWDATCore */,
+				C3AF00162F17461F00827C1E /* MWDATMockDevice */,
 			);
 			productName = PokerAssist;
 			productReference = C3A70FD12EF9E08800965C71 /* PokerAssist.app */;
@@ -94,6 +135,9 @@
 			);
 			mainGroup = C3A70FC82EF9E08800965C71;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C3AF00112F17461F00827C1E /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C3A70FD22EF9E08800965C71 /* Products */;
 			projectDirPath = "";
@@ -264,7 +308,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
@@ -308,7 +352,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
@@ -351,6 +395,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3AF00112F17461F00827C1E /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/meta-wearables-dat-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3AF00122F17461F00827C1E /* MWDATCamera */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3AF00112F17461F00827C1E /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = MWDATCamera;
+		};
+		C3AF00142F17461F00827C1E /* MWDATCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3AF00112F17461F00827C1E /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = MWDATCore;
+		};
+		C3AF00162F17461F00827C1E /* MWDATMockDevice */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3AF00112F17461F00827C1E /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = MWDATMockDevice;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3A70FC92EF9E08800965C71 /* Project object */;
 }
